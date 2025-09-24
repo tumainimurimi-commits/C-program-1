@@ -1,0 +1,19 @@
+/*
+Name:Tumaini Murimi
+Reg No:CT100/G/26252/26252
+Describtion: Assignment on unit of semester one
+*/
+#include <stdio.h>
+
+int main()
+{
+    printf("Anologue Electronic\n");
+    printf("Computer system and Organization\n");
+    printf("Fundamental o ICT\n");
+    printf("Introduction to computer apllicaction\n");
+    printf("Essentials of Accounting\n");
+    printf("Communication skills\n");
+    printf("Mathematicsw for Science\n");
+
+    return 0;
+}
