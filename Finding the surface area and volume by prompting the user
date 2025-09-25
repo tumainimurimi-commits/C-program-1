@@ -1,0 +1,37 @@
+/*
+Name:Tumaini Murimi
+Reg no:CT100/G/26252/
+Describtion:Find the volume and the surface area of the cylinder by prompting the user 
+*/
+#include <stdio.h>
+
+int main()
+{
+//variable declaration on fields provided
+float radius;
+float height;
+const float PI=3.142;
+float volume;
+float surfaceArea;
+//prompt the user enter radius
+printf("Enter radius:\n");
+scanf("%f" , &radius);
+
+//prompt the user to enter height
+printf("Enter height:\n");
+scanf("%f" , &height);
+
+//volume of cylinder
+volume=PI*radius*radius*height;
+
+//The surface area of the cylinder
+surfaceArea=2*PI*radius*radius+(2*PI*radius*height);
+
+//Display volume
+printf("The volume of the cylinder:%.2f\n",volume );
+
+//Display the surface area of the cylinder
+printf("The surfaceArea of the cylinder:%.2f\n",surfaceArea);
+
+    return 0;
+}
