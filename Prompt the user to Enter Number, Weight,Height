@@ -1,0 +1,26 @@
+/*
+Name:Tumaini Murimi
+Reg No:CT100/G/26252/26252
+Descriptiption:Assignment to prompt the user to enter phone number, weight,height
+*/
+#include <stdio.h>
+
+int main()
+{
+    //Declaration of the variable to be enter
+    int number; 
+    float weight;
+    float height;
+
+    // Prompting the user to enter a number
+    printf("Enter your number:\n");
+    scanf("%d", &number);
+
+    printf("enter your weight:\n");
+    scanf("%f" , &weight);
+    
+    printf("enter your height:\n");
+   scanf("%f", &height);
+
+    return 0;
+}
