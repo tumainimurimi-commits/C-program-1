@@ -1,0 +1,33 @@
+/*
+Name:Tumaini Murimi
+Reg No:CT100/G/26252/26252
+Describtion:Company's water charges on the customers
+*/
+#include <stdio.h>
+
+int main(){
+//variable declaration
+int units;
+float bill;
+
+//prompting the user to enter the number of water unit consumed
+printf("Enter number of water units consumed:\t");
+scanf("%d" , &units);
+
+//Units available and the bill to be prompted
+if(units>=0 && units<=30){
+  units = bill *20;
+}
+else if(units>=31 && units<=60){
+    bill=(30 * 20) 
+    +(units-30) * 25;
+}
+
+else{                                                          
+    bill=(30*20) +(30 * 25) +(units-
+     60) *30;
+}
+ 
+ printf("total water bill:%.2fKES", bill);
+    return 0;
+ }
