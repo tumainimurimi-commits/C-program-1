@@ -1,0 +1,32 @@
+/* 
+Name:Tumaini Murimi
+Reg no.CT100/G/26252/25
+Describtion: Checking the student are eligible for final exams
+*/
+#include <stdio.h>
+
+int main()
+{
+ //Declaration of the varible
+ int attendance;
+ int marks;
+ 
+ //prompt the user to enter the attendance
+    printf("Enter your in attendance percentage : \t");
+    scanf("%d" , &attendance);
+    
+    //prompt the user to enter the marks
+    printf("Enter your marks :\t");
+    scanf("%d" , &marks);
+    
+    //check eligibility
+    if("attendance is >=75 && marks is >=40 "){
+    printf("Your are eligible for the final exams\n");
+    }
+    
+    else{
+     printf("Your are 'NOT' eligle for final exams\n");
+    }
+    
+    return 0;
+}
