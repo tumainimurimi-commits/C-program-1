@@ -1,0 +1,40 @@
+/*
+Name:Tumaini Murimi 
+Reg:CT100/G/26252/25
+DESCRIPTION: Number guessing game
+*/
+
+NUMBER GUESSING GAME
+
+#include <stdio.h>
+#include <stdlib.h>  // for rand() and srand()
+#include <time.h>    // for time()
+
+int main() {
+    int secret, guess, attempts = 0;
+
+    // Generate random number between 1 and 20
+    srand(time(0));          // seed the random number generator
+    secret = rand() % 20 + 1;  // generates numbers from 1 to 20
+
+    printf("Guess the number (between 1 and 20)\n");
+
+    while (1) { // infinite loop until guessed correctly
+        printf("Enter your guess: ");
+        scanf("%d", &guess);
+        attempts++;
+
+        if (guess > secret) {
+            printf("Too high!\n");
+        } 
+        else if (guess < secret) {
+            printf("Too low!\n");
+        } 
+        else {
+            printf("Congratulations! You guessed the number in %d attempts.\n", attempts);
+            break;  // exit loop when correct
+        }
+    }
+
+    return 0;
+}
