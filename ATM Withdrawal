@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    float balance = 10000.0;  // initial balance
+    float withdraw;
+
+    printf("Initial balance: %.2f\n", balance);
+
+    // Loop continues while balance is greater than 0
+    while (balance > 0) {
+        printf("\nEnter amount to withdraw: ");
+        scanf("%f", &withdraw);
+
+        if (withdraw <= 0) {
+            printf("Invalid amount! Please enter a positive value.\n");
+            continue; // skip rest of the loop
+        }
+
+        balance -= withdraw;
+
+        if (balance > 0) {
+            printf("Withdrawal successful. Remaining balance: %.2f\n", balance);
+        } else {
+            printf("Withdrawal successful. Your account is now empty or overdrawn!\n");
+        }
+    }
+
+    printf("\nTransaction complete. Final balance: %.2f\n", balance);
+    return 0;
+}
