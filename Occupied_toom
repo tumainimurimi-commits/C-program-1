@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    int totalRooms, occupiedRooms;
+    float roomRate, totalRevenue, occupancyRate;
+    
+    // Input
+    printf("Enter total number of rooms: ");
+    scanf("%d", &totalRooms);
+    
+    printf("Enter number of occupied rooms: ");
+    scanf("%d", &occupiedRooms);
+    
+    printf("Enter room rate per night: ");
+    scanf("%f", &roomRate);
+    
+    // Calculations
+    if (occupiedRooms > totalRooms) {
+        printf("\nError: Occupied rooms cannot exceed total rooms.\n");
+        return 1;
+    }
+
+    totalRevenue = occupiedRooms * roomRate;
+    occupancyRate = ((float)occupiedRooms / totalRooms) * 100;
+
+    // Output
+    printf("\n----- HOTEL REVENUE & OCCUPANCY REPORT -----\n");
+    printf("Total Rooms: %d\n", totalRooms);
+    printf("Occupied Rooms: %d\n", occupiedRooms);
+    printf("Vacant Rooms: %d\n", totalRooms - occupiedRooms);
+    printf("Room Rate: $%.2f\n", roomRate);
+    printf("Total Revenue: $%.2f\n", totalRevenue);
+    printf("Occupancy Rate: %.2f%%\n", occupancyRate);
+
+    return 0;
+}
